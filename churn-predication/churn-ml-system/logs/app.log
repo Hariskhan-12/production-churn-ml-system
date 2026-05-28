@@ -1,0 +1,5 @@
+2026-05-24 00:35:37,011 | INFO | preprocess.py | preprocess | Starting preprocessing
+2026-05-24 00:35:37,134 | INFO | preprocess.py | build_pipeline | Duplicates removed: 0
+2026-05-24 00:35:37,152 | INFO | preprocess.py | build_pipeline | Numeric columns: ['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges']
+2026-05-24 00:35:37,156 | INFO | preprocess.py | build_pipeline | Categorical columns: ['customerID', 'gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+2026-05-24 00:35:37,163 | INFO | preprocess.py | preprocess | Preprocessing completed

@@ -1,0 +1,61 @@
+data:
+  path: src/data/churn.csv
+
+feature:
+  target: Churn
+
+model:
+  type: XGBoost
+  n_estimators: 100
+  random_state: 42
+  test_size: 0.2
+
+artifacts:
+  model_dir: models
+  model_name: model.pkl
+  preprocessor_name: preprocessor.pkl
+
+schema:
+  expected_columns:
+    - gender
+    - SeniorCitizen
+    - Partner
+    - Dependents
+    - tenure
+    - PhoneService
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaperlessBilling
+    - PaymentMethod
+    - MonthlyCharges
+    - TotalCharges
+    - Churn
+
+  expected_dtypes:
+    gender: object
+    SeniorCitizen: int64
+    Partner: object
+    Dependents: object
+    tenure: int64
+    PhoneService: object
+    MultipleLines: object
+    InternetService: object
+    OnlineSecurity: object
+    OnlineBackup: object
+    DeviceProtection: object
+    TechSupport: object
+    StreamingTV: object
+    StreamingMovies: object
+    Contract: object
+    PaperlessBilling: object
+    PaymentMethod: object
+    MonthlyCharges: float64
+    TotalCharges: object
+    Churn: object
